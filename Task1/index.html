@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="hi">
+<header id="header">
+  <!--  Brand Logo  -->
+  <a class="nav-brand" href="" target="_blank">
+    <img id="header-im" src="dd.png">
+  </a>
+  <!--  Toggle Menu for Mobile  -->
+  <input type="checkbox" id="toggle-menu" role="button">
+  <label for="toggle-menu" class="toggle-menu">Menu</label>
+  <!--  Menus  -->
+  <nav id="nav-bar" class="navbar">
+    <ul class="menu">
+      <li><a class="nav-link" href="#hi">Home</a></li>
+      <li><a class="nav-link" href="#flower">Service</a></li>
+      <li><a class="nav-link" href="#featured">Popular</a></li>
+      <li><a class="nav-link" href="#contact">Contact us</a></li>
+    </ul>
+    <ul class="social-menu">
+      <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Hero Section -->
+<div class="her">
+   <div class="hero-text">
+    <h1>Heavenly Bloom</h1>
+     <h4>the flower shop that you've been looking for</h4>
+  <p>"Blooms That Brighten Your Day, Delivered to Your Door 🚚💐:)</p>
+  </div>
+  </div>
+</div>
+</div>
+<!-- Featured Section -->
+<section id="featured">
+  <div class="title title-left">
+    <span class="line"></span><h3>Popular</h3>
+  </div>
+  <div class="wrapper">
+    <div class="image">
+      <img src="bb.jpg" alt="Pixel Facial Cream">
+    </div>
+    <div class="text">
+      <h2>Explore More</h2>
+      <p>"Blooming Brilliance: Your Local Flower Shop, Online 📦💐"</p>
+       <p> "From Garden to Vase, We Craft Floral Dreams 🌾💫"
+      </p>
+      <a href="#" class=btn>$5 /person</a>
+    </div>
+  </div>
+</section>
+<div class="hero" id="flower">
+  <div class="hero-img">
+    <img src="cc.jpg" alt="Pixel Skincare">
+  </div>
+  <div class="hero-text">
+    <h1>Flower bouquet</h1>
+    <p>Available in all colours</p>
+     <p>Send your thanks to your loved ones with a bouquet of flowers.</p>
+    <a href="#featured" class="btn">$6/bouquet</a>
+  </div>
+</div>
+<script>
+const logo = document.querySelector('.nav-brand');
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    logo.style.opacity = 1 - (scrollY / 200); // Adjust '200' as needed for the desired effect
+});
+</script>
+</body>
+</html>
